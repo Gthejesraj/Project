@@ -8,10 +8,8 @@ import pandas as pd
 application = Flask(__name__)
 app = application
 
-scaler = pickle.load(open(
-    "/Users/thejesraj/Desktop/Projects/Diabetes_Prediction/Model/standardscaler.pkl", "rb"))
-model = pickle.load(open(
-    "/Users/thejesraj/Desktop/Projects/Diabetes_Prediction/Model/modelForPrediction.pkl", "rb"))
+scaler = pickle.load(open("Model/standardScalar.pkl", "rb"))
+model = pickle.load(open("Model/modelForPrediction.pkl", "rb"))
 
 # Route for homepage
 
